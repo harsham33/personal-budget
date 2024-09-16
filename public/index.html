@@ -21,10 +21,12 @@
     
     <div class="menu" aria-label="Main Navigation">
         <ul>
+            
             <li><a href="/">Homepage</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
+    
         </ul>
     </div>
 
@@ -39,7 +41,7 @@
         <div class="page-area">
 
             <!-- This is a Semantic HTML Change  -->
-            <section class="text-box" aria-labelledby="track-header">
+            <article class="text-box" aria-labelledby="track-header">
                 <!-- This is an A11y Change -->
                 <h1 id="track-header">Stay on track</h1>
                 <p>
@@ -47,7 +49,7 @@
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </section>
+            </article>
     
             <!-- This is a Semantic HTML Change -->  
             <section class="text-box" aria-labelledby="alerts-header">
@@ -59,7 +61,7 @@
             </section>
     
             <!-- This is a Semantic HTML Change -->
-            <section class="text-box" aria-labelledby="results-header">
+            <aside class="text-box" aria-labelledby="results-header">
                 <!-- This is an A11y Change -->
                 <h1 id="results-header">Results</h1>
                 <p>
@@ -67,16 +69,21 @@
                     Also, they live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </section>
+            </aside>
     
-            <!-- This is a Semantic HTML Change -->
-            <section class="text-box" aria-labelledby="free-header">
-                <!-- This is an A11y Change -->
-                <h1 id="free-header">Free</h1>
-                <p>
-                    <canvas id="myChart" width="400" height="400"></canvas> 
-                </p>
-            </section>
+            <div class="charts">
+                <!-- This is a Semantic HTML change -->
+                <article class="text-box d3js" id="d3jsChart">
+                    <h1>D3js Chart</h1>
+                </article>
+                <!-- This is a Semantic HTML change -->
+                <article class="text-box">
+                    <h1>Pie Chart</h1>
+                    <p>
+                        <canvas id="myChart" min-width="400" min-height="400"></canvas>
+                    </p>
+                </article>
+            </div>
 
         </div>
 
@@ -86,7 +93,7 @@
     <footer class="bottom">
         <div class="center">
             <!-- This is an A11y Change -->
-            <address>All rights reserved &copy; Fabio Nolasco</address>
+            <address>All rights reserved &copy; Harsha Mulge</address>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
